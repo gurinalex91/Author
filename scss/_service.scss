@@ -1,0 +1,43 @@
+	.service{
+		&__container{
+			grid-template-columns: 1fr;
+			text-align: center;
+			padding: 100px 0 20px 0;	
+		}
+		&__item{
+			margin-bottom: 40px;
+		}
+		&__icon{
+			margin: auto;
+			padding: 20px;
+			border-radius: 50%;
+			border: 3px solid $main-color;
+		}
+		&__icon__item1{
+			width: 60px; height: 60px;
+	    	background: url('../img/sprite.png') -70px 10px; 
+		}
+		&__icon__item2{
+			width: 60px; height: 60px;
+	    	background: url('../img/sprite.png') 10px -70px; 
+		}
+		&__icon__item3{
+			width: 60px; height: 60px;
+	    	background: url('../img/sprite.png') 10px 10px; 
+		}
+		&__icon__item4{
+			width: 60px; height: 60px;
+	    	background: url('../img/sprite.png') -70px -70px; 
+		}
+		&__title{
+				font-size: 20px;
+				margin: 20px 0 10px;
+		}
+		&__text{
+			line-height: 26px;
+			margin-bottom: 24px;
+		}
+		&__btn{
+			padding: 10px 15px;
+		}
+	}

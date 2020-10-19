@@ -1,0 +1,19 @@
+/*fonts*/
+	@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@import "reset";
+@import "main";
+@import "header";
+@import "main-carousel";
+@import "service";
+@import "gallery";
+@import "team";
+@import "plans";
+/*reviews*/
+	.reviews{
+		display: none;
+	}
+@import "footer";
+@import "media-adaptive";
+	

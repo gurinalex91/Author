@@ -1,0 +1,55 @@
+.plans{
+		background: #f1f1f1;
+		padding: 35px 0 0;
+		.carousel__item{
+		background: #f8f9fb;
+		text-align: center;
+		border-radius: 2px;
+		&:hover .carousel__item__title, &:hover .carousel__btn,{
+			background: $main-color;
+		}
+		}	
+		.carousel{
+			&__item__title{
+				padding: 30px 0;
+				color: #fff;
+				font-size: 26px;
+				background: #485460;
+				border-radius: 2px 2px 0 0;
+				transition: all 0.5s ease; 
+			}
+			&__item__price{
+				font-size: 20px;
+				line-height: 48px;
+			}
+			&__main-text{
+				p{
+					background: #fff;
+					margin-bottom: 1px;
+					font-size: 14px;
+					line-height: 45px;
+				}
+			}
+			&__btn{
+				display: inline-block;
+				background: #485460;
+				font-size: 17px;
+				padding: 12px 50px;
+				margin: 30px 0 35px;
+			}
+		}
+		.owl-carousel button.owl-dot{
+			background: $text-color;
+			width: 15px;
+		    height: 15px;
+		    border-radius: 50%;
+		    text-align: center;
+		    margin: 15px 5px;
+		}
+		.owl-carousel button.owl-dot.active{
+			background: $main-color;
+		}
+		.owl-dots{
+			text-align: center;
+		}
+	}

@@ -1,0 +1,115 @@
+.logo{
+		font-family: 'Lobster', cursive;
+		color: $main-color;
+		font-size: 43px;
+		text-shadow: 1px 1px 2px $main-color;
+		&:hover{
+			color: $text-color;
+			text-shadow: 2px 2px 5px; 
+		}
+	}	
+	.header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 500;
+		width: 100%;
+		padding: 10px 0;
+		&__container{
+			grid-template: 1fr / 1fr minmax(auto, 540px) minmax(auto, 630px) 1fr;
+			margin-bottom: 5px;
+		}
+		&__logo{
+			align-self: center;
+			grid-column: 2 / 3;
+		}
+		&__list{
+			display: block;
+		}
+		&__list__item{
+			padding: 10px 0;
+			margin: 10px 30px;
+		}
+		&__link{
+			padding: 10px 20px;
+			color: #484c55;
+			font-size: 18px;
+		}
+		&__burger{
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 3;
+			align-self: center;
+	    	justify-self: end;
+	    	right: 10%;
+	    	.burger__strip{
+				background: #1f373d;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				top: 9px;
+			}
+			&:before, &:after{
+				content: '';
+				background: #1f373d;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				left: 0;
+				transition: all 0.4s ease;
+			}
+			&:before{
+				top: 0;
+			}
+			&:after{
+				bottom: 0;
+			}
+			&.active:before{
+				transform: rotate(45deg);
+				top: 9px;
+			}
+			&.active:after{
+				transform: rotate(-45deg);
+				bottom: 9px;
+			}
+			&.active .burger__strip{
+				transform: scale(0);	
+			}	
+		}
+		&__menu{
+			position: fixed;
+			top: -100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			transition: all 0.3s linear;
+			overflow: auto;
+			display: block;
+			padding: 60px 0 0 0;
+		}
+		&__menu.active{
+			top: 0;
+		}
+		&:before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 3;
+		}
+		&__container{
+			position: relative;
+		}
+		.logo{
+			position: relative;
+			z-index: 3;
+			margin-left: 25px;
+		}
+	}
